@@ -53,7 +53,7 @@ export const BoxNum = styled.h5`
   font-size: 36px;
   line-height: 40px;
   letter-spacing: 0.01em;
-  color: #FFFFFF;
+  color: rgba(25, 255, 255, 0.66) ;
   margin-bottom: 8px;
 
   @media ${props => props.theme.breakpoints.md} {
@@ -72,7 +72,7 @@ export const BoxText = styled.p`
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.75);
+  color: #B660CD ;
 
   @media ${props => props.theme.breakpoints.md}{
     font-size: 16px;

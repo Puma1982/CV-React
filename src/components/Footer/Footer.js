@@ -8,32 +8,29 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <LinkList>
-      <LinkColumn>
-      <LinkTitle> Call </LinkTitle>
-      <LinkItem href="tel:+46-722-612-016">+46-722-612-016 </LinkItem>
-      </LinkColumn>
+        <LinkColumn>
+          <LinkTitle> Call </LinkTitle>
+          <LinkItem href="tel:+46-722-612-016">+46-722-612-016 </LinkItem>
+        </LinkColumn>
 
-      <LinkColumn>
-      <LinkTitle> Email </LinkTitle>
-      <LinkItem href="mailto:griss_hai2005@hotmail.com">griss_hai2005@hotmail.com</LinkItem>
-      </LinkColumn>
+        <LinkColumn>
+          <LinkTitle> Email </LinkTitle>
+          <LinkItem href="mailto:haithemgrissa@gmail.com">haithemgrissa@gmail.com</LinkItem>
+        </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
           <Slogan>Feel free to contact me</Slogan>
+
         </CompanyContainer>
         <SocialContainer>
-        <SocialIcons href="https://github.com/Puma1982"> 
-      <AiFillGithub size="3rem" color='gold'/></SocialIcons>
+          <SocialIcons href="https://github.com/Puma1982">
+            <AiFillGithub size="5rem" color='white' /></SocialIcons>
 
-      <SocialIcons href="https://www.linkedin.com/in/haithem-grissander-2715a022a/"> 
-      <AiFillLinkedin size="3rem" color='gold'/>
-</SocialIcons>
-      
-      <SocialIcons href="https://www.linkedin.com/in/haithem-grissander-01092026/"> 
-      <AiFillLinkedin size="3rem" color='gold'/>
-      </SocialIcons>
-      </SocialContainer>
+          <SocialIcons href="https://www.linkedin.com/in/haithem-grissander-2715a022a/">
+            <AiFillLinkedin size="5rem" color='white' />
+          </SocialIcons>
+        </SocialContainer>
       </SocialIconsContainer>
     </FooterWrapper>
   );

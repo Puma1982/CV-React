@@ -8,13 +8,12 @@ import Projects from './../Projects/Projects';
 import Technologies from './../Technologies/Technologies';
 import { SocialIconsContainer } from './../Footer/FooterStyles';
 
-const Header = () =>  (
+const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display :"flex", alignItems: "center", color : 'gold' ,marginBottom:'25px' }}>
-<DiRedhat size="5rem" /> <Span>Haithem Grissander</Span><br/>
-
+        <a style={{ display: "flex", alignItems: "center", color: 'gold', marginBottom: '25px' }}>
+          <DiRedhat size="8rem" /> <Span>Haithem Grissander</Span><br />
         </a>
       </Link>
     </Div1>
@@ -25,41 +24,35 @@ const Header = () =>  (
           <NavLink>
             Projects
           </NavLink>
-      </Link>
+        </Link>
       </li>
 
       <li>
         <Link href="#tech">
           <NavLink>
-           Technologies
+            Skills
           </NavLink>
-      </Link>
+        </Link>
       </li>
 
       <li>
         <Link href="#about">
           <NavLink>
-           About
+            About
           </NavLink>
-      </Link>
+        </Link>
       </li>
     </Div2>
-    
+
     <Div3>
-      
-      <SocialIcons href="https://github.com/Puma1982"> 
-      <AiFillGithub size="3rem" color='gold'/>
-      </SocialIcons>
-      
-      <SocialIcons href="https://www.linkedin.com/in/haithem-grissander-2715a022a/"> 
-      <AiFillLinkedin size="3rem" color='gold'/>
-      </SocialIcons>
-      
-      
-      <SocialIcons href="https://www.linkedin.com/in/haithem-grissander-01092026/"> 
-      <AiFillLinkedin size="3rem" color='gold'/>
+
+      <SocialIcons href="https://github.com/Puma1982">
+        <AiFillGithub size="6rem" color='white' />
       </SocialIcons>
 
+      <SocialIcons href="https://www.linkedin.com/in/haithem-grissander-2715a022a/">
+        <AiFillLinkedin size="6rem" color='gold' />
+      </SocialIcons>
     </Div3>
   </Container>
 );

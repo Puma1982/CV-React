@@ -19,7 +19,7 @@ const Timeline = () => {
 
     if (carouselRef.current) {
       const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
-      
+
       scroll(carouselRef.current, scrollLeft);
     }
   }
@@ -46,8 +46,20 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+        My name is Haithem, I’ve been studying computer science for two years.
+        In order to kick-start my career before I graduate, I am looking for a job of a web developer,
+        since that’s what I’ve been doing already for four years in my free time.
+        I have designed websites for friends, developed simple e-shops with the help of some open source
+        content-management systems, and worked on other web-related projects. My greatest accomplishment to date
+        is this website:         <a href="https://github.com/Puma1982/B-l-O-g-T-e-C-h" target="_blank"> [B-l-O-g-T-e-C-h] </a>
+        I am ambitious and hard-working, and I strive to reach my goals. I am an
+        excellent communicator and a natural leader, and I am motivated by challenges and hard work.
+        My organizational skills and positive mindset help me tackle any obstacle. Outside of work,
+        I enjoy hiking and spending time with friends.
       </SectionText>
+      <SectionTitle>Free time</SectionTitle>
+      <SectionText>Write code for personal projects, read books, cook, work out,
+        listen to music, spend time with family, and go for a bike ride.</SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
@@ -58,9 +70,9 @@ const Timeline = () => {
                 active={activeItem}
                 onClick={(e) => handleClick(e, index)}
               >
-              <CarouselItemTitle>
-                {item.year}
-                <CarouselItemImg
+                <CarouselItemTitle>
+                  {item.year}
+                  <CarouselItemImg
                     width="208"
                     height="6"
                     viewBox="0 0 208 6"
@@ -90,8 +102,8 @@ const Timeline = () => {
                       </linearGradient>
                     </defs>
                   </CarouselItemImg>
-              </CarouselItemTitle>
-              <CarouselItemText>{item.text}</CarouselItemText>
+                </CarouselItemTitle>
+                <CarouselItemText>{item.text}</CarouselItemText>
               </CarouselItem>
             </CarouselMobileScrollNode>
           ))}
@@ -99,7 +111,7 @@ const Timeline = () => {
       </CarouselContainer>
       <CarouselButtons>
         {TimeLineData.map((item, index) => (
-          <CarouselButton 
+          <CarouselButton
             key={index}
             index={index}
             active={activeItem}
@@ -111,7 +123,7 @@ const Timeline = () => {
         ))}
       </CarouselButtons>
       <SectionDivider />
-      
+
     </Section>
   );
 };
